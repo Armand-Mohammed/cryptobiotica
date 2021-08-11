@@ -18,6 +18,8 @@ import { RouterModule} from "@angular/router";
 // Services
 import { ContractService } from "../services/contract/contract.service";
 import { ThreeBox } from "../services/3box.service"
+import { FlexLayoutModule, FlexModule } from '@angular/flex-layout';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import { ThreeBox } from "../services/3box.service"
     CommonModule,
     RouterModule.forChild(UiRoute),
     AppMaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexModule,
+    FlexLayoutModule,
+    HomeModule
   ],
   exports: [
     TopNavComponent,

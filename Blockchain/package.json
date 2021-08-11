@@ -1,7 +1,7 @@
 {
-  "name": "contracts",
-  "version": "1.1.1",
-  "description": "Truffle eth dependencies",
+  "name": "cryptobiotica-marketplace",
+  "version": "1.0.0",
+  "description": "Germ marketplace",
   "main": "truffle-config.js",
   "author": {
     "name": "@crisgarner"
@@ -17,6 +17,9 @@
   "license": "MIT",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.2.1",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
     "dotenv": "^8.2.0"
   }
 }

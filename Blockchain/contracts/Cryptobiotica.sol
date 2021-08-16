@@ -4,8 +4,6 @@ contract Cryptobiotica {
     string public name;
     uint public productCount = 0;
 
-    address payable lister = msg.sender;
-
     mapping(uint => Product) public products;
 
     struct Product {
@@ -73,5 +71,4 @@ contract Cryptobiotica {
         // Trigger an event
         emit ProductPurchased(productCount, _product.name, _product.price, msg.sender, true);
     }
-
 }
